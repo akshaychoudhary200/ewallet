@@ -1,112 +1,41 @@
 
 # Ewallet Microservices Project
 
-This project is a microservices-based e-wallet application. It consists of multiple services that handle different aspects of the e-wallet functionality, including user management, wallet management, transaction processing, and notifications.
+This project is a microservices-based e-wallet application. It consists of multiple services that handle different aspects of the e-wallet functionality, including user management, wallet management, transaction processing, and notifications.It consists of four main services, each responsible for a specific aspect of the e-wallet functionality. The services communicate with each other using REST APIs and Kafka for inter-service communication.
 
 ## Project Structure
+The project is organized into four main directories, each representing a microservice:
+
+1. ewalletNotificationService-master
+2. ewalletTransactionService-master
+3. ewalletUserService-master
+4. ewalletWalletService-master
 
 ```
-.DS_Store
-
 ewalletNotificationService-master/
     .gitignore
     pom.xml
     src/
         main/
-            java/
-                com/
-                    ewallet/
-                        notification/
-                            NotificationService.java
-                            NotificationController.java
-                            NotificationRepository.java
-                            NotificationConfig.java
-        test/
-            java/
-                com/
-                    ewallet/
-                        notification/
-                            NotificationServiceTest.java
     target/
-        classes/
-        generated-sources/
-        generated-test-sources/
-        test-classes/
-
 ewalletTransactionService-master/
     .gitignore
     pom.xml
     src/
         main/
-            java/
-                com/
-                    ewallet/
-                        transaction/
-                            TransactionService.java
-                            TransactionController.java
-                            TransactionRepository.java
-                            TransactionConfig.java
-        test/
-            java/
-                com/
-                    ewallet/
-                        transaction/
-                            TransactionServiceTest.java
     target/
-        classes/
-        generated-sources/
-        generated-test-sources/
-        test-classes/
-
 ewalletUserService-master/
     .gitignore
     pom.xml
     src/
         main/
-            java/
-                com/
-                    ewallet/
-                        user/
-                            UserService.java
-                            UserController.java
-                            UserRepository.java
-                            UserConfig.java
-        test/
-            java/
-                com/
-                    ewallet/
-                        user/
-                            UserServiceTest.java
     target/
-        classes/
-        generated-sources/
-        generated-test-sources/
-        test-classes/
-
 ewalletWalletService-master/
     .gitignore
     pom.xml
     src/
         main/
-            java/
-                com/
-                    ewallet/
-                        wallet/
-                            WalletService.java
-                            WalletController.java
-                            WalletRepository.java
-                            WalletConfig.java
-        test/
-            java/
-                com/
-                    ewallet/
-                        wallet/
-                            WalletServiceTest.java
     target/
-        classes/
-        generated-sources/
-        generated-test-sources/
-        test-classes/
 ```
 
 ## Services
